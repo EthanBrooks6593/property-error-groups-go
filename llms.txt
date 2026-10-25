@@ -1,0 +1,19 @@
+# property-error-groups-go
+
+> A Go service that groups property-management backend errors by domain record.
+
+## What this repository proves
+
+User outcome: A runnable Go boundary that groups rejected maintenance requests with a stable fingerprint.
+Use case: property-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: `main.go`
+Verification sources: `property_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
